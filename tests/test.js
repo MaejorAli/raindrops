@@ -2,7 +2,7 @@ const assert = require('chai').assert;
 const myApp = require('../src/main.js');
 
 describe('raindrops', function() {
-
+   //handles valid input
    describe('handle valid input', () => {
        it('should return "pling"', () => {
            assert.equal(myApp.raindrops(6), "pling");
@@ -32,7 +32,7 @@ describe('raindrops', function() {
        it('should return "plingplong"', () => {
            assert.equal(myApp.raindrops(21), "plingplong");
        });
-
+   //handles invalid  input
    describe('handle Invalid Input', () => {
        it('should return "Invalid Input"', () => {
            assert.equal(myApp.raindrops("goat"), "Invalid Input");
